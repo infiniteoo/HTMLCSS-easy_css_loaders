@@ -1,5 +1,7 @@
 .loader {
   height: 50px;
+  transform-origin: bottom center;
+  animation: rotate 3s linear infinite;
 }
 
 .circle {
@@ -11,4 +13,10 @@
 
 .circle:nth-child(2) {
   background-color: palevioletred;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
 }
